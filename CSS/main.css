@@ -5,7 +5,6 @@
 body {
     font-family: "Open Sans", sans-serif;
     background-color: slategray;
-    opacity: 50%;
 }
 
 h1 {
@@ -48,7 +47,7 @@ li {
     padding-bottom: 20px;
 }
 
-div .wi:nth-child(n+4) {
+div .wi:nth-child(n+5) {
     display: none;
 }
 
@@ -127,18 +126,25 @@ input:checked + .slider:before {
 }
 
 @media screen and (min-width: 600px) {
+    body {
+        margin-left: 10%;
+        width: 80%;
+    }
+    /*
     .wi {
-        float: left;
-        height: 150px;
-        width: 200px;
-        margin: 10px;
-    }
-    .wi li {
-        width: 100%;
-        display: block;
-    }
+    float: left;
+    height: 150px;
+    width: 200px;
+    margin: 10px;
+}
+
+.wi li {
+    width: 100%;
+    display: block;
+}
+*/
     div .wi:nth-child(n+7) {
-        display: none;
+        display: block;
     }
 }
 
@@ -158,6 +164,6 @@ input:checked + .slider:before {
         display: block;
     }
     div .wi:nth-child(n+13) {
-        display: none;
+        display: block;
     }
 }
