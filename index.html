@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Weather Forcast</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons.css"> </head>
+
+<body>
+    <header>
+        <h1> Weather Forcast</h1> Fahrenheit
+        <label class="switch">
+            <input onclick="TempUnitSelector()" type="checkbox">
+            <div class="slider round"></div>
+        </label> Tomorrow
+        <label class="switch">
+            <input onclick="DaySelector()" type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </header>
+    <main>
+        <div class="weather-forecast">
+
+        </div>
+    </main>
+    <footer> </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
