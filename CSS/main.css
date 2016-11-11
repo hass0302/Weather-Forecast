@@ -15,7 +15,8 @@ div .wi {
     font-size: 3vh;
     padding: 20px;
     padding-bottom: 40px;
-    display: block;
+    display: none;
+    /* Changed from block to none to hide all first */
     border: 2px solid black;
     border-radius: 15px;
     background-color: white;
@@ -47,8 +48,10 @@ li {
     padding-bottom: 20px;
 }
 
-div .wi:nth-child(n+5) {
-    display: none;
+div .wi:nth-child(-n+4) {
+    /* Changed from n+4 to -n+4 to choose first four */
+    display: block;
+    /* Changed from none to block to by default show the first four */
 }
 
 
@@ -126,24 +129,17 @@ input:checked + .slider:before {
 }
 
 @media screen and (min-width: 600px) {
-    body {
-        margin-left: 10%;
-        width: 80%;
-    }
-    /*
     .wi {
-    float: left;
-    height: 150px;
-    width: 200px;
-    margin: 10px;
-}
-
-.wi li {
-    width: 100%;
-    display: block;
-}
-*/
-    div .wi:nth-child(n+7) {
+        float: left;
+        height: 150px;
+        width: 200px;
+        margin: 10px;
+    }
+    .wi li {
+        width: 100%;
+        display: block;
+    }
+    div .wi:nth-child(-n+6) {
         display: block;
     }
 }
@@ -163,7 +159,7 @@ input:checked + .slider:before {
         width: 100%;
         display: block;
     }
-    div .wi:nth-child(n+13) {
+    div .wi:nth-child(-n+12) {
         display: block;
     }
 }
